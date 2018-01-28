@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/qss"/>
+    <qresource prefix="/">
+        <file>rsc/qss/default_qss.qss</file>
+    </qresource>
+</RCC>

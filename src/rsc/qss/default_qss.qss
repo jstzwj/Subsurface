@@ -1,0 +1,8 @@
+QMainWindow,QDialog{    
+    background: rgb(30, 30, 30);    
+}
+
+QMenuBar{
+    background: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+}
