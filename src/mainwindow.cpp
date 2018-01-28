@@ -9,7 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // menu
     menu_edit = new QMenu("Edit");
-
+    menu_edit->addAction("New");
+    menu_edit->addAction("Reset");
 
 
     ui->menuBar->addMenu(menu_edit);
