@@ -28,13 +28,19 @@ SOURCES += \
         mainwindow.cpp \
     viewwidget.cpp \
     customedtitlebar.cpp \
-    commandpanel.cpp
+    commandpanel.cpp \
+    createtab.cpp \
+    modifytab.cpp \
+    createprimitivetab.cpp
 
 HEADERS += \
         mainwindow.h \
     viewwidget.h \
     customedtitlebar.h \
-    commandpanel.h
+    commandpanel.h \
+    createtab.h \
+    modifytab.h \
+    createprimitivetab.h
 
 FORMS += \
         mainwindow.ui

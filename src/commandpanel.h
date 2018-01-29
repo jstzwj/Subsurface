@@ -6,6 +6,9 @@
 #include <QDialog>
 #include <QVBoxLayout>
 
+#include "createtab.h"
+#include "modifytab.h"
+
 class CommandPanel:public QWidget
 {
     Q_OBJECT
@@ -14,8 +17,8 @@ public:
 
 protected:
     QTabWidget * tabWidget;
-    QDialog * objectTab;
-    QDialog * modificationTab;
+    CreateTab * createTab;
+    ModifyTab * modifyTab;
     QVBoxLayout * mainLayout;
 };
 

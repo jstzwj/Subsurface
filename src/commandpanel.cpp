@@ -6,10 +6,10 @@ CommandPanel::CommandPanel(QWidget *parent)
     // tab widget
     tabWidget = new QTabWidget();
     // tabs
-    objectTab = new QDialog();
-    modificationTab = new QDialog();
-    tabWidget->insertTab(0, objectTab, "Object");
-    tabWidget->insertTab(0, modificationTab, "Modification");
+    createTab = new CreateTab();
+    modifyTab = new ModifyTab();
+    tabWidget->insertTab(0, createTab, "create");
+    tabWidget->insertTab(1, modifyTab, "modify");
 
     // layout
     mainLayout = new QVBoxLayout();
