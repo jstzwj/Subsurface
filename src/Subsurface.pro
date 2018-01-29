@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     viewwidget.cpp \
-    customedtitlebar.cpp
+    customedtitlebar.cpp \
+    commandpanel.cpp
 
 HEADERS += \
         mainwindow.h \
     viewwidget.h \
-    customedtitlebar.h
+    customedtitlebar.h \
+    commandpanel.h
 
 FORMS += \
         mainwindow.ui

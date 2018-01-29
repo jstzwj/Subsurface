@@ -5,8 +5,10 @@
 #include <QLayout>
 #include <QMenu>
 #include <QMenuBar>
+#include <QDockWidget>
 #include "viewwidget.h"
 #include "customedtitlebar.h"
+#include "commandpanel.h"
 
 namespace Ui {
 class MainWindow;
@@ -29,6 +31,7 @@ protected:
 
     // widget
     QWidget * windowCentralWidget;
+    QMainWindow * mainDockArea;
     QVBoxLayout * mainVLayout;
     QVBoxLayout * vLayout;
     ViewWidget * viewWorkspace;
@@ -40,6 +43,13 @@ protected:
     QMenu * menu_views;
     QMenu * menu_create;
     QMenu * menu_modifiers;
+
+    // dock
+    QDockWidget * viewDock;
+    QDockWidget * commandDock;
+
+    // panel
+    CommandPanel * commandPanel;
 
 private:
     Ui::MainWindow *ui;

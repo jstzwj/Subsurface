@@ -28,15 +28,33 @@ MainWindow::MainWindow(QWidget *parent) :
     menubar->addMenu(menu_edit);
     menubar->addMenu(menu_tools);
 
+    // panel
+    commandPanel = new CommandPanel();
+
     // layout
     windowCentralWidget = new QWidget();
     vLayout = new QVBoxLayout();
     viewWorkspace = new ViewWidget();
 
+    // dock
+    mainDockArea = new QMainWindow();
+    viewDock = new QDockWidget();
+    commandDock = new QDockWidget();
+
+    viewDock->setWidget(viewWorkspace);
+    viewDock->setFeatures(QDockWidget::DockWidgetClosable);
+    viewDock->setWindowTitle("View Panel");
+
+    commandDock->setAllowedAreas(Qt::LeftDockWidgetArea | Qt::RightDockWidgetArea);
+    commandDock->setWidget(commandPanel);
+    commandDock->setWindowTitle("Command Panel");
+
     vLayout->setMargin(0);
     vLayout->addWidget(pTitleBar);
     vLayout->addWidget(menubar);
-    vLayout->addWidget(viewWorkspace);
+    vLayout->addWidget(mainDockArea);
+    mainDockArea->addDockWidget(Qt::RightDockWidgetArea, commandDock);
+    mainDockArea->setCentralWidget(viewDock);
 
     windowCentralWidget->setLayout(vLayout);
     this->setCentralWidget(windowCentralWidget);
