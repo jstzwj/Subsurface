@@ -62,3 +62,37 @@ QMenu::indicator {
     width: 13px;  
     height: 13px;  
 }
+
+/* titlebar */
+
+#whiteLabel{
+    color: rgb(255,255,255);
+}
+
+#minimizeButton{
+    border-image: url(:/rsc/images/button/minimizeButton_white.png);
+}
+
+#minimizeButton:hover{
+    border-image: url(:/rsc/images/button/minimizeButton_white.png);
+    background-color: rgb(100, 100, 100);
+}
+
+#maximizeButton{
+    border-image: url(:/rsc/images/button/maximizeButton_white.png);
+}
+
+#maximizeButton:hover{
+    border-image: url(:/rsc/images/button/maximizeButton_white.png);
+    background-color: rgb(100, 100, 100);
+}
+
+#closeButton{
+    border-image: url(:/rsc/images/button/closeButton_white.png);
+}
+
+#closeButton:hover{
+    border-image: url(:/rsc/images/button/closeButton_white.png);
+    background-color: rgb(100, 100, 100);
+}
+

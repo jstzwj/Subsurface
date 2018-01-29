@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rsc/images/button/closeButton.png</file>
+        <file>rsc/images/button/minimizeButton.png</file>
+        <file>rsc/images/button/maximizeButton.png</file>
+        <file>rsc/images/button/closeButton_white.png</file>
+        <file>rsc/images/button/maximizeButton_white.png</file>
+        <file>rsc/images/button/minimizeButton_white.png</file>
+        <file>rsc/images/logo/logo.jpg</file>
+        <file>rsc/images/logo/logo.png</file>
+    </qresource>
+</RCC>

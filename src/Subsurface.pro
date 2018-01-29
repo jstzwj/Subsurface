@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    viewwidget.cpp
+    viewwidget.cpp \
+    customedtitlebar.cpp
 
 HEADERS += \
         mainwindow.h \
-    viewwidget.h
+    viewwidget.h \
+    customedtitlebar.h
 
 FORMS += \
         mainwindow.ui
@@ -42,4 +44,5 @@ win32:LIBS += -lOpengl32 \
 DISTFILES +=
 
 RESOURCES += \
-    qss.qrc
+    qss.qrc \
+    images.qrc

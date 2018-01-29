@@ -4,7 +4,9 @@
 #include <QMainWindow>
 #include <QLayout>
 #include <QMenu>
+#include <QMenuBar>
 #include "viewwidget.h"
+#include "customedtitlebar.h"
 
 namespace Ui {
 class MainWindow;
@@ -19,8 +21,15 @@ public:
     ~MainWindow();
 
 protected:
+    // title bar
+    CustomedTitleBar *pTitleBar;
+
+    // menubar
+    QMenuBar *menubar;
+
     // widget
     QWidget * windowCentralWidget;
+    QVBoxLayout * mainVLayout;
     QVBoxLayout * vLayout;
     ViewWidget * viewWorkspace;
 
