@@ -25,25 +25,27 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    viewwidget.cpp \
-    customedtitlebar.cpp \
-    commandpanel.cpp \
-    createtab.cpp \
-    modifytab.cpp \
-    createprimitivetab.cpp
+    UI/commandpanel.cpp \
+    UI/createprimitivetab.cpp \
+    UI/createtab.cpp \
+    UI/customedtitlebar.cpp \
+    UI/mainwindow.cpp \
+    UI/modifytab.cpp \
+    UI/viewwidget.cpp \
+    UI/widget/colorbox.cpp
 
 HEADERS += \
-        mainwindow.h \
-    viewwidget.h \
-    customedtitlebar.h \
-    commandpanel.h \
-    createtab.h \
-    modifytab.h \
-    createprimitivetab.h
+    UI/commandpanel.h \
+    UI/createprimitivetab.h \
+    UI/createtab.h \
+    UI/customedtitlebar.h \
+    UI/mainwindow.h \
+    UI/modifytab.h \
+    UI/viewwidget.h \
+    UI/widget/colorbox.h
 
 FORMS += \
-        mainwindow.ui
+    UI/mainwindow.ui
 
 win32:LIBS += -lOpengl32 \
                 -lglu32 \

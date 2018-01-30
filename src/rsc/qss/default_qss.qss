@@ -96,3 +96,7 @@ QMenu::indicator {
     background-color: rgb(100, 100, 100);
 }
 
+/* label */
+QLabel{
+    color: rgb(255,255,255);
+}
