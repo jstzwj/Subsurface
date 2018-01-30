@@ -32,7 +32,10 @@ SOURCES += \
     UI/mainwindow.cpp \
     UI/modifytab.cpp \
     UI/viewwidget.cpp \
-    UI/widget/colorbox.cpp
+    UI/widget/colorbox.cpp \
+    core/scence/scence.cpp \
+    core/scence/primitive.cpp \
+    core/scence/primitives/box.cpp
 
 HEADERS += \
     UI/commandpanel.h \
@@ -42,7 +45,10 @@ HEADERS += \
     UI/mainwindow.h \
     UI/modifytab.h \
     UI/viewwidget.h \
-    UI/widget/colorbox.h
+    UI/widget/colorbox.h \
+    core/scence/scence.h \
+    core/scence/primitive.h \
+    core/scence/primitives/box.h
 
 FORMS += \
     UI/mainwindow.ui

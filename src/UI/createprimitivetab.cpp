@@ -16,7 +16,12 @@ CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
 
     // objects
     boxButton = new QPushButton(tr("Box"), objectTypeGroup);
+    boxButton->setCheckable(true);
+    boxButton->setAutoExclusive(true);
+
     coneButton = new QPushButton(tr("Cone"), objectTypeGroup);
+    coneButton->setCheckable(true);
+    coneButton->setAutoExclusive(true);
 
     // name and color
     nameLineEdit = new QLineEdit("", nameAndColorGroup);
