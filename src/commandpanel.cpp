@@ -4,15 +4,15 @@ CommandPanel::CommandPanel(QWidget *parent)
     :QWidget(parent)
 {
     // tab widget
-    tabWidget = new QTabWidget();
+    tabWidget = new QTabWidget(this);
     // tabs
-    createTab = new CreateTab();
-    modifyTab = new ModifyTab();
+    createTab = new CreateTab(this);
+    modifyTab = new ModifyTab(this);
     tabWidget->insertTab(0, createTab, "create");
     tabWidget->insertTab(1, modifyTab, "modify");
 
     // layout
-    mainLayout = new QVBoxLayout();
+    mainLayout = new QVBoxLayout(this);
     mainLayout->setMargin(0);
     mainLayout->addWidget(tabWidget);
 

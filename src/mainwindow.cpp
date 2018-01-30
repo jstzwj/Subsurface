@@ -7,10 +7,14 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    // layout
+    windowCentralWidget = new QWidget(this);
+    vLayout = new QVBoxLayout(windowCentralWidget);
+
     // titlebar
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
 
-    pTitleBar = new CustomedTitleBar(this);
+    pTitleBar = new CustomedTitleBar(windowCentralWidget);
     installEventFilter(pTitleBar);
 
     setWindowTitle("Subsurface");
@@ -23,23 +27,19 @@ MainWindow::MainWindow(QWidget *parent) :
 
     menu_tools =new QMenu("Tools");
 
-    menubar = new QMenuBar();
+    menubar = new QMenuBar(windowCentralWidget);
     menubar->setFixedHeight(40);
     menubar->addMenu(menu_edit);
     menubar->addMenu(menu_tools);
 
-    // panel
-    commandPanel = new CommandPanel();
-
-    // layout
-    windowCentralWidget = new QWidget();
-    vLayout = new QVBoxLayout();
-    viewWorkspace = new ViewWidget();
-
     // dock
-    mainDockArea = new QMainWindow();
-    viewDock = new QDockWidget();
-    commandDock = new QDockWidget();
+    mainDockArea = new QMainWindow(this);
+    viewDock = new QDockWidget(mainDockArea);
+    commandDock = new QDockWidget(mainDockArea);
+
+    // panel
+    commandPanel = new CommandPanel(commandDock);
+    viewWorkspace = new ViewWidget(viewDock);
 
     viewDock->setWidget(viewWorkspace);
     viewDock->setFeatures(QDockWidget::DockWidgetClosable);
@@ -49,15 +49,19 @@ MainWindow::MainWindow(QWidget *parent) :
     commandDock->setWidget(commandPanel);
     commandDock->setWindowTitle("Command Panel");
 
+
+    mainDockArea->addDockWidget(Qt::RightDockWidgetArea, commandDock);
+    mainDockArea->setCentralWidget(viewDock);
+
     vLayout->setMargin(0);
     vLayout->addWidget(pTitleBar);
     vLayout->addWidget(menubar);
     vLayout->addWidget(mainDockArea);
-    mainDockArea->addDockWidget(Qt::RightDockWidgetArea, commandDock);
-    mainDockArea->setCentralWidget(viewDock);
 
     windowCentralWidget->setLayout(vLayout);
     this->setCentralWidget(windowCentralWidget);
+
+
 }
 
 MainWindow::~MainWindow()
