@@ -1,7 +1,7 @@
 #ifndef PRIMITIVE_H
 #define PRIMITIVE_H
 
-
+#include "SVector.h"
 namespace subsurface
 {
     namespace scence
@@ -10,6 +10,9 @@ namespace subsurface
         {
         public:
             Primitive();
+
+        protected:
+            Vector3f position;
         };
     }
 }

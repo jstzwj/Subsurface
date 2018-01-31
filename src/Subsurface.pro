@@ -48,7 +48,11 @@ HEADERS += \
     UI/widget/colorbox.h \
     core/scence/scence.h \
     core/scence/primitive.h \
-    core/scence/primitives/box.h
+    core/scence/primitives/box.h \
+    core/type.h \
+    core/scence/SVector.h \
+    core/scence/SPoint.h \
+    core/scence/SNormal.h
 
 FORMS += \
     UI/mainwindow.ui

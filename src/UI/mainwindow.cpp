@@ -21,11 +21,15 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowIcon(QIcon(":/rsc/images/logo/logo.png"));
 
     // menu
-    menu_edit = new QMenu("Edit");
-    menu_edit->addAction("New");
-    menu_edit->addAction("Reset");
+    menu_edit = new QMenu(tr("Edit"));
+    menu_edit->addAction(tr("New"));
+    menu_edit->addAction(tr("Reset"));
+    menu_edit->addAction(tr("Open"));
+    menu_edit->addAction(tr("Save"));
+    menu_edit->addAction(tr("Save As"));
 
-    menu_tools =new QMenu("Tools");
+    menu_tools =new QMenu(tr("Tools"));
+    menu_tools->addAction(tr("Undo or Redo"));
 
     menubar = new QMenuBar(windowCentralWidget);
     menubar->setFixedHeight(40);
