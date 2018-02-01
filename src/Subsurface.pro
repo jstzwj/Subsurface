@@ -61,8 +61,11 @@ win32:LIBS += -lOpengl32 \
                 -lglu32 \
                 -lglut
 
-DISTFILES +=
+DISTFILES += \
+    shader/fragmentshader.frag \
+    shader/vertexshader.vert
 
 RESOURCES += \
     qss.qrc \
-    images.qrc
+    images.qrc \
+    shaders.qrc
