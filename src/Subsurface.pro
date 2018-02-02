@@ -35,7 +35,10 @@ SOURCES += \
     UI/widget/colorbox.cpp \
     core/scence/scence.cpp \
     core/scence/primitive.cpp \
-    core/scence/primitives/box.cpp
+    core/scence/primitives/box.cpp \
+    core/scence/shape.cpp \
+    core/scence/light.cpp \
+    core/scence/camera.cpp
 
 HEADERS += \
     UI/commandpanel.h \
@@ -50,9 +53,13 @@ HEADERS += \
     core/scence/primitive.h \
     core/scence/primitives/box.h \
     core/type.h \
-    core/scence/SVector.h \
-    core/scence/SPoint.h \
-    core/scence/SNormal.h
+    util/singleton.h \
+    core/scence/normal.h \
+    core/scence/point.h \
+    core/scence/vector.h \
+    core/scence/shape.h \
+    core/scence/light.h \
+    core/scence/camera.h
 
 FORMS += \
     UI/mainwindow.ui

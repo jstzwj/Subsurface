@@ -4,8 +4,8 @@
 #include<stdexcept>
 
 #include"../type.h"
-#include"SPoint.h"
-#include"SNormal.h"
+#include"point.h"
+#include"normal.h"
 
 
 template <typename T>

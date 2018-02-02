@@ -2,7 +2,7 @@
 #define NORMAL_H
 
 #include"../type.h"
-#include"SVector.h"
+#include"vector.h"
 
 template <typename T>
 class Vector3;

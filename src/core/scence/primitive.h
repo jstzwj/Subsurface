@@ -1,7 +1,7 @@
 #ifndef PRIMITIVE_H
 #define PRIMITIVE_H
 
-#include "SVector.h"
+#include "vector.h"
 namespace subsurface
 {
     namespace scence
