@@ -18,23 +18,23 @@ public:
 
 protected:
 
-    // 双击标题栏进行界面的最大化/还原
+    // double click titlebar and maximize it
     virtual void mouseDoubleClickEvent(QMouseEvent *event);
 
-    // 进行鼠界面的拖动
+    // drag and move the window
     virtual void mousePressEvent(QMouseEvent *event);
 
-    // 设置界面标题与图标
+    // set title and icon
     virtual bool eventFilter(QObject *obj, QEvent *event);
 
 private slots:
 
-    // 进行最小化、最大化/还原、关闭操作
+    // minimize, maximize and close operation
     void onClicked();
 
 private:
 
-    // 最大化/还原
+    // maximize
     void updateMaximize();
 
 private:

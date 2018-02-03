@@ -65,8 +65,7 @@ FORMS += \
     UI/mainwindow.ui
 
 win32:LIBS += -lOpengl32 \
-                -lglu32 \
-                -lglut
+                -lglu32
 
 DISTFILES += \
     shader/fragmentshader.frag \
