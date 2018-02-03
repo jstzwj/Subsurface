@@ -39,7 +39,8 @@ SOURCES += \
     editor/customedtitlebar.cpp \
     editor/mainwindow.cpp \
     editor/modifytab.cpp \
-    editor/viewwidget.cpp
+    editor/viewwidget.cpp \
+    editor/widget/spushbutton.cpp
 
 HEADERS += \
     core/scence/scence.h \
@@ -61,7 +62,8 @@ HEADERS += \
     editor/customedtitlebar.h \
     editor/mainwindow.h \
     editor/modifytab.h \
-    editor/viewwidget.h
+    editor/viewwidget.h \
+    editor/widget/spushbutton.h
 
 FORMS += \
     editor/mainwindow.ui

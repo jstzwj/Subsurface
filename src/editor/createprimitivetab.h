@@ -13,6 +13,7 @@
 
 #include "widget/namecolorwidget.h"
 #include "widget/colorbox.h"
+#include "widget/spushbutton.h"
 
 class CreatePrimitiveTab : public QWidget
 {
@@ -28,8 +29,8 @@ protected:
 
     QGridLayout * standardPrimitivesLayout;
     QVBoxLayout * nameAndColorLayout;
-    QPushButton * boxButton;
-    QPushButton * coneButton;
+    SPushButton * boxButton;
+    SPushButton * coneButton;
 
     NameColorWidget *nameAndColor;
 

@@ -15,11 +15,11 @@ CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
     nameAndColorLayout = new QVBoxLayout(nameAndColorGroup);
 
     // objects
-    boxButton = new QPushButton(tr("Box"), objectTypeGroup);
+    boxButton = new SPushButton(tr("Box"), objectTypeGroup);
     boxButton->setCheckable(true);
     boxButton->setAutoExclusive(true);
 
-    coneButton = new QPushButton(tr("Cone"), objectTypeGroup);
+    coneButton = new SPushButton(tr("Cone"), objectTypeGroup);
     coneButton->setCheckable(true);
     coneButton->setAutoExclusive(true);
 
