@@ -12,7 +12,7 @@ CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
 
     // layouts
     standardPrimitivesLayout= new QGridLayout(objectTypeGroup);
-    nameAndColorLayout = new QHBoxLayout(nameAndColorGroup);
+    nameAndColorLayout = new QVBoxLayout(nameAndColorGroup);
 
     // objects
     boxButton = new QPushButton(tr("Box"), objectTypeGroup);
@@ -24,14 +24,12 @@ CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
     coneButton->setAutoExclusive(true);
 
     // name and color
-    nameLineEdit = new QLineEdit("", nameAndColorGroup);
-    colorBox = new ColorBox(nameAndColorGroup);
+    nameAndColor = new NameColorWidget(nameAndColorGroup);
 
     standardPrimitivesLayout -> addWidget(boxButton, 0, 0);
     standardPrimitivesLayout -> addWidget(coneButton, 0, 1);
 
-    nameAndColorLayout->addWidget(nameLineEdit);
-    nameAndColorLayout->addWidget(colorBox);
+    nameAndColorLayout->addWidget(nameAndColor);
 
     objectTypeGroup->setTitle("Object Type");
     nameAndColorGroup->setTitle("Name and Color");

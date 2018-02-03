@@ -9,6 +9,7 @@
 #include <QPushButton>
 #include <QColorDialog>
 #include <QDebug>
+#include <QGraphicsDropShadowEffect>
 
 class ColorBox : public QWidget
 {

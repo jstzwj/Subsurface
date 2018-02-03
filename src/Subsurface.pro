@@ -38,7 +38,8 @@ SOURCES += \
     core/scence/primitives/box.cpp \
     core/scence/shape.cpp \
     core/scence/light.cpp \
-    core/scence/camera.cpp
+    core/scence/camera.cpp \
+    UI/widget/namecolorwidget.cpp
 
 HEADERS += \
     UI/commandpanel.h \
@@ -59,7 +60,8 @@ HEADERS += \
     core/scence/vector.h \
     core/scence/shape.h \
     core/scence/light.h \
-    core/scence/camera.h
+    core/scence/camera.h \
+    UI/widget/namecolorwidget.h
 
 FORMS += \
     UI/mainwindow.ui

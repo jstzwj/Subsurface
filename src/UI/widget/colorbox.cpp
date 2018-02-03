@@ -21,6 +21,11 @@ void ColorBox::setColor(const QColor &color)
     colorButton->setPalette(palette);
     colorButton->setAutoFillBackground(true);
     colorButton->setFlat(true);
+
+    // shadow
+    QGraphicsDropShadowEffect *effert = new QGraphicsDropShadowEffect(colorButton);
+    effert->setOffset(2,2);
+    colorButton->setGraphicsEffect(effert);
 }
 
 void ColorBox::clickButton()

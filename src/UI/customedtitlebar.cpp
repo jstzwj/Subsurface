@@ -1,7 +1,7 @@
 #include "customedtitlebar.h"
 
 #ifdef Q_OS_WIN
-#pragma comment(lib, "user32.lib")
+// #pragma comment(lib, "user32.lib")
 #include <qt_windows.h>
 #endif
 

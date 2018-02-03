@@ -10,6 +10,8 @@
 #include <QPushButton>
 #include <QColor>
 #include <QLineEdit>
+
+#include "widget/namecolorwidget.h"
 #include "widget/colorbox.h"
 
 class CreatePrimitiveTab : public QWidget
@@ -25,12 +27,11 @@ protected:
     QGroupBox * nameAndColorGroup;
 
     QGridLayout * standardPrimitivesLayout;
-    QHBoxLayout * nameAndColorLayout;
+    QVBoxLayout * nameAndColorLayout;
     QPushButton * boxButton;
     QPushButton * coneButton;
 
-    QLineEdit *nameLineEdit;
-    ColorBox *colorBox;
+    NameColorWidget *nameAndColor;
 
 protected:
     void setNameAndColor(const QString &name, const QColor &color);
