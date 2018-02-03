@@ -12,3 +12,9 @@ NameColorWidget::NameColorWidget(QWidget *parent) : QWidget(parent)
 
     this->setLayout(mainLayout);
 }
+
+void NameColorWidget::setNameAndColor(const QString &name, const QColor &color)
+{
+    nameLineEdit->setText(name);
+    colorBox->setColor(color);
+}

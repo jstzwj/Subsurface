@@ -44,10 +44,6 @@ CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
     showStandardPrimitives();
 }
 
-void CreatePrimitiveTab::setNameAndColor(const QString &name, const QColor &color)
-{
-
-}
 
 void CreatePrimitiveTab::showStandardPrimitives()
 {

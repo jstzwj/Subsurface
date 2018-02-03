@@ -34,7 +34,6 @@ protected:
     NameColorWidget *nameAndColor;
 
 protected:
-    void setNameAndColor(const QString &name, const QColor &color);
     void showStandardPrimitives();
 signals:
 

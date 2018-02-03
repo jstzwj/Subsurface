@@ -25,31 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    UI/commandpanel.cpp \
-    UI/createprimitivetab.cpp \
-    UI/createtab.cpp \
-    UI/customedtitlebar.cpp \
-    UI/mainwindow.cpp \
-    UI/modifytab.cpp \
-    UI/viewwidget.cpp \
-    UI/widget/colorbox.cpp \
     core/scence/scence.cpp \
     core/scence/primitive.cpp \
     core/scence/primitives/box.cpp \
     core/scence/shape.cpp \
     core/scence/light.cpp \
     core/scence/camera.cpp \
-    UI/widget/namecolorwidget.cpp
+    editor/widget/colorbox.cpp \
+    editor/widget/namecolorwidget.cpp \
+    editor/commandpanel.cpp \
+    editor/createprimitivetab.cpp \
+    editor/createtab.cpp \
+    editor/customedtitlebar.cpp \
+    editor/mainwindow.cpp \
+    editor/modifytab.cpp \
+    editor/viewwidget.cpp
 
 HEADERS += \
-    UI/commandpanel.h \
-    UI/createprimitivetab.h \
-    UI/createtab.h \
-    UI/customedtitlebar.h \
-    UI/mainwindow.h \
-    UI/modifytab.h \
-    UI/viewwidget.h \
-    UI/widget/colorbox.h \
     core/scence/scence.h \
     core/scence/primitive.h \
     core/scence/primitives/box.h \
@@ -61,10 +53,18 @@ HEADERS += \
     core/scence/shape.h \
     core/scence/light.h \
     core/scence/camera.h \
-    UI/widget/namecolorwidget.h
+    editor/widget/colorbox.h \
+    editor/widget/namecolorwidget.h \
+    editor/commandpanel.h \
+    editor/createprimitivetab.h \
+    editor/createtab.h \
+    editor/customedtitlebar.h \
+    editor/mainwindow.h \
+    editor/modifytab.h \
+    editor/viewwidget.h
 
 FORMS += \
-    UI/mainwindow.ui
+    editor/mainwindow.ui
 
 win32:LIBS += -lOpengl32 \
                 -lglu32
