@@ -6,6 +6,8 @@
 #include <QTabWidget>
 #include <QVBoxLayout>
 #include <QButtonGroup>
+#include <QIcon>
+#include <QStackedWidget>
 
 #include "widget/stoolbarbutton.h"
 #include "createprimitivetab.h"
@@ -26,6 +28,7 @@ protected:
     SToolBarButton * shapesButton;
     SToolBarButton * lightsButton;
     SToolBarButton * camerasButton;
+    QStackedWidget * stackedWidget;
     CreatePrimitiveTab * primitiveTab;
 
 

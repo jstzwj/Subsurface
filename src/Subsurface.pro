@@ -77,7 +77,8 @@ win32:LIBS += -lOpengl32 \
 
 DISTFILES += \
     shader/fragmentshader.frag \
-    shader/vertexshader.vert
+    shader/vertexshader.vert \
+    rsc/images/Geometry.png
 
 RESOURCES += \
     qss.qrc \

@@ -9,5 +9,9 @@
         <file>rsc/images/logo/logo.jpg</file>
         <file>rsc/images/logo/logo.png</file>
         <file>rsc/images/arrow/arrow-down.png</file>
+        <file>rsc/images/Geometry.png</file>
+        <file>rsc/images/Shapes.png</file>
+        <file>rsc/images/Lights.png</file>
+        <file>rsc/images/Cameras.png</file>
     </qresource>
 </RCC>
