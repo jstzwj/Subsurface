@@ -5,8 +5,9 @@
 #include <QDialog>
 #include <QTabWidget>
 #include <QVBoxLayout>
+#include <QButtonGroup>
 
-
+#include "widget/stoolbarbutton.h"
 #include "createprimitivetab.h"
 
 class CreateTab : public QDialog
@@ -17,7 +18,14 @@ public:
 
 protected:
     QVBoxLayout * mainLayout;
-    QTabWidget * createTypeTabWidget;
+    // createTypeTabWidget;
+    QButtonGroup * createTypeGroup;
+    QWidget * createTypeGroupBox;
+    QHBoxLayout * createTypeLayout;
+    SToolBarButton * geometryButton;
+    SToolBarButton * shapesButton;
+    SToolBarButton * lightsButton;
+    SToolBarButton * camerasButton;
     CreatePrimitiveTab * primitiveTab;
 
 
