@@ -41,7 +41,8 @@ SOURCES += \
     editor/modifytab.cpp \
     editor/viewwidget.cpp \
     editor/widget/spushbutton.cpp \
-    editor/widget/stoolbarbutton.cpp
+    editor/widget/stoolbarbutton.cpp \
+    editor/layout/flowlayout.cpp
 
 HEADERS += \
     core/scence/scence.h \
@@ -65,7 +66,8 @@ HEADERS += \
     editor/modifytab.h \
     editor/viewwidget.h \
     editor/widget/spushbutton.h \
-    editor/widget/stoolbarbutton.h
+    editor/widget/stoolbarbutton.h \
+    editor/layout/flowlayout.h
 
 FORMS += \
     editor/mainwindow.ui
