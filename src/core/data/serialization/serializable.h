@@ -3,7 +3,6 @@
 
 namespace subsurface
 {
-
     namespace data
     {
         class Serializable

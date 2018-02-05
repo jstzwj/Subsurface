@@ -45,14 +45,15 @@ SOURCES += \
     editor/layout/flowlayout.cpp \
     core/data/datablock.cpp \
     editor/widget/scombobox.cpp \
-    editor/widget/modifierstack.cpp
+    editor/widget/modifierstack.cpp \
+    core/loader/readfile.cpp \
+    core/loader/filedata.cpp
 
 HEADERS += \
     core/scence/scence.h \
     core/scence/primitive.h \
     core/scence/primitives/box.h \
     core/type.h \
-    util/singleton.h \
     core/scence/normal.h \
     core/scence/point.h \
     core/scence/vector.h \
@@ -75,7 +76,17 @@ HEADERS += \
     core/data/serialization/serializable.h \
     core/data/serialization/binarywriter.h \
     editor/widget/scombobox.h \
-    editor/widget/modifierstack.h
+    editor/widget/modifierstack.h \
+    core/loader/readfile.h \
+    core/loader/filedata.h \
+    core/data/serialization/FileInputStream.h \
+    core/data/serialization/FileOutputStream.h \
+    core/data/serialization/InputStream.h \
+    core/data/serialization/OutputStream.h \
+    core/data/serialization/Stream.h \
+    core/data/serialization/StreamBase.h \
+    core/util/Endian.h \
+    core/util/singleton.h
 
 FORMS += \
     editor/mainwindow.ui
