@@ -188,8 +188,8 @@ QGroupBox{
     color: white;
 }
 
-/* QComboBox */
-QComboBox {
+/* SComboBox */
+SComboBox {
      border: 1px solid gray;  
      border-radius: 3px;
      padding: 1px 18px 1px 3px;  
@@ -198,13 +198,13 @@ QComboBox {
      background: rgb(80,80,80); 
 }
 
-QComboBox::drop-down {  
+SComboBox::drop-down {  
      subcontrol-origin:paddind;    
      subcontrol-position: top right;  
      width: 15px;  
      border: none;   
  }  
   
- QComboBox::down-arrow {  
+ SComboBox::down-arrow {  
      image: url(:/rsc/images/arrow/arrow-down.png);
  }  

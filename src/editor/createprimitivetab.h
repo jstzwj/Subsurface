@@ -11,6 +11,8 @@
 #include <QColor>
 #include <QLineEdit>
 
+#include "widget/scombobox.h"
+
 #include "widget/namecolorwidget.h"
 #include "widget/colorbox.h"
 #include "widget/spushbutton.h"
@@ -23,7 +25,7 @@ public:
 
 protected:
     QVBoxLayout * mainLayout;
-    QComboBox * primitiveType;
+    SComboBox * primitiveType;
     QGroupBox * objectTypeGroup;
     QGroupBox * nameAndColorGroup;
 

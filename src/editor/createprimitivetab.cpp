@@ -3,7 +3,7 @@
 CreatePrimitiveTab::CreatePrimitiveTab(QWidget *parent) : QWidget(parent)
 {
     mainLayout = new QVBoxLayout(this);
-    primitiveType = new QComboBox(this);
+    primitiveType = new SComboBox(this);
     primitiveType->addItem("Stantard Primitives");
 
     // groupbox

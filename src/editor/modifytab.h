@@ -3,13 +3,21 @@
 
 #include <QWidget>
 #include <QDialog>
+#include <QVBoxLayout>
 
-class ModifyTab : public QDialog
+#include "widget/scombobox.h"
+#include "widget/namecolorwidget.h"
+
+class ModifyTab : public QWidget
 {
     Q_OBJECT
 public:
     explicit ModifyTab(QWidget *parent = nullptr);
 
+protected:
+    QVBoxLayout * mainLayout;
+    NameColorWidget *nameAndColor;
+    SComboBox *modifyList;
 signals:
 
 public slots:

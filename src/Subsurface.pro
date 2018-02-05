@@ -42,7 +42,10 @@ SOURCES += \
     editor/viewwidget.cpp \
     editor/widget/spushbutton.cpp \
     editor/widget/stoolbarbutton.cpp \
-    editor/layout/flowlayout.cpp
+    editor/layout/flowlayout.cpp \
+    core/data/datablock.cpp \
+    editor/widget/scombobox.cpp \
+    editor/widget/modifierstack.cpp
 
 HEADERS += \
     core/scence/scence.h \
@@ -67,7 +70,12 @@ HEADERS += \
     editor/viewwidget.h \
     editor/widget/spushbutton.h \
     editor/widget/stoolbarbutton.h \
-    editor/layout/flowlayout.h
+    editor/layout/flowlayout.h \
+    core/data/datablock.h \
+    core/data/serialization/serializable.h \
+    core/data/serialization/binarywriter.h \
+    editor/widget/scombobox.h \
+    editor/widget/modifierstack.h
 
 FORMS += \
     editor/mainwindow.ui
