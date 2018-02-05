@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QDialog>
 #include <QVBoxLayout>
+#include <QListWidget>
 
 #include "widget/scombobox.h"
 #include "widget/namecolorwidget.h"
@@ -18,6 +19,7 @@ protected:
     QVBoxLayout * mainLayout;
     NameColorWidget *nameAndColor;
     SComboBox *modifyList;
+    QListWidget *modifierStack;
 signals:
 
 public slots:

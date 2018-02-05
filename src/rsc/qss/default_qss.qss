@@ -156,7 +156,7 @@ QTabWidget::pane {
     border-bottom: 1px solid rgb(80, 80, 80);
     border-left: 1px solid rgb(80, 80, 80);
     border-right: 1px solid rgb(80, 80, 80);
-    background: rgb(50, 50, 50);
+    background: rgb(30, 30, 30);
 }
 QTabWidget::tab-bar {
 }
@@ -207,4 +207,29 @@ SComboBox::drop-down {
   
  SComboBox::down-arrow {  
      image: url(:/rsc/images/arrow/arrow-down.png);
- }  
+ }
+
+ /* modifier stack */
+#modifierStack{
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(30, 30, 30);
+    color: white;
+}
+
+
+#modifierStack::item
+{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+#modifierStack::item:hover
+{
+    show-decoration-selected:5;
+    background: rgb(150, 179, 214);
+}
+
+#modifierStack::item:selected
+{
+    background: rgb(95, 138, 193);
+}

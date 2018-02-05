@@ -47,7 +47,10 @@ SOURCES += \
     editor/widget/scombobox.cpp \
     editor/widget/modifierstack.cpp \
     core/loader/readfile.cpp \
-    core/loader/filedata.cpp
+    core/loader/filedata.cpp \
+    core/scontext.cpp \
+    core/datacontext.cpp \
+    core/editorcontext.cpp
 
 HEADERS += \
     core/scence/scence.h \
@@ -86,7 +89,10 @@ HEADERS += \
     core/data/serialization/Stream.h \
     core/data/serialization/StreamBase.h \
     core/util/Endian.h \
-    core/util/singleton.h
+    core/util/singleton.h \
+    core/scontext.h \
+    core/datacontext.h \
+    core/editorcontext.h
 
 FORMS += \
     editor/mainwindow.ui
