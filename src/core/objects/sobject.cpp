@@ -2,11 +2,10 @@
 
 namespace subsurface
 {
-    namespace data
+    namespace objects
     {
         SObject::SObject()
         {
-
         }
     }
 }

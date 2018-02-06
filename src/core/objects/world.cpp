@@ -1,11 +1,9 @@
-#include "plane.h"
-
-
+#include "world.h"
 namespace subsurface
 {
     namespace objects
     {
-        Plane::Plane()
+        World::World()
         {
 
         }

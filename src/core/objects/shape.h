@@ -4,9 +4,9 @@
 #include "sobject.h"
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
-        class Shape : public data::SObject
+        class Shape : public SObject
         {
         public:
             Shape();

@@ -5,7 +5,7 @@
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         class AABBBoundBox:public BoundBox
         {

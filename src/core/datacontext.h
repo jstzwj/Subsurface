@@ -1,7 +1,7 @@
 #ifndef DATACONTEXT_H
 #define DATACONTEXT_H
 
-#include"scence/scence.h"
+#include"objects/scence.h"
 
 namespace subsurface
 {
@@ -9,7 +9,7 @@ namespace subsurface
     {
     public:
         DataContext();
-        scence::Scence scene;
+        objects::Scence scene;
     };
 }
 

@@ -6,7 +6,7 @@
 #include"../type.h"
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         template<class T>
         class Point2

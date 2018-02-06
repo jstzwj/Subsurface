@@ -54,7 +54,10 @@ SOURCES += \
     core/objects/scence.cpp \
     core/objects/shape.cpp \
     core/objects/sobject.cpp \
-    core/objects/geometry/box.cpp
+    core/objects/geometry/box.cpp \
+    core/objects/displist.cpp \
+    editor/view/drawobject.cpp \
+    core/objects/world.cpp
 
 
 HEADERS += \
@@ -103,7 +106,11 @@ HEADERS += \
     core/objects/vector.h \
     core/objects/geometry/box.h \
     core/util/endian.h \
-    core/util/singleton.h
+    core/util/singleton.h \
+    core/objects/color.h \
+    core/objects/displist.h \
+    editor/view/drawobject.h \
+    core/objects/world.h
 
 
 FORMS += \

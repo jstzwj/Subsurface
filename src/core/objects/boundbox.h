@@ -3,7 +3,7 @@
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         class BoundBox
         {

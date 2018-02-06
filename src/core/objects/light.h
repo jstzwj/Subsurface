@@ -4,9 +4,9 @@
 #include "sobject.h"
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
-        class Light : public data::SObject
+        class Light : public SObject
         {
         public:
             Light();

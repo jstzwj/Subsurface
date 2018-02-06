@@ -9,7 +9,7 @@ class Vector3;
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         template<class T>
         class Normal3

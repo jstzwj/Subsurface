@@ -4,9 +4,9 @@
 #include "sobject.h"
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
-        class Camera : public data::SObject
+        class Camera : public SObject
         {
         public:
             Camera();

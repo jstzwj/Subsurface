@@ -2,7 +2,7 @@
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         Box::Box()
         {

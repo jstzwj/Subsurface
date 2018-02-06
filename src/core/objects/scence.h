@@ -2,6 +2,8 @@
 #define SCENCE_H
 
 #include <vector>
+#include <memory>
+#include <list>
 #include"sobject.h"
 #include "geometry.h"
 #include "vector.h"
@@ -9,17 +11,15 @@
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
-        class Scence : public data::SObject
+        class Scence
         {
         public:
             Scence();
 
-        protected:
-
-        private:
-            std::vector<SObject> objectsList;
+        public:
+            std::list<std::shared_ptr<SObject>> objectsManager;
         };
     }
 

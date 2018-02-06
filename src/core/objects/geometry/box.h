@@ -6,7 +6,7 @@
 
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         class Box : public Geometry
         {

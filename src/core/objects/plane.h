@@ -4,7 +4,7 @@
 #include "normal.h"
 namespace subsurface
 {
-    namespace scence
+    namespace objects
     {
         class Plane
         {

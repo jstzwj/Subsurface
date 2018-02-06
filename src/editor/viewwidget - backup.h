@@ -11,10 +11,6 @@
 #include <gl/GLU.h>
 #include <gl/GL.h>
 
-#include "../core/util/singleton.h"
-#include "../core/scontext.h"
-#include "../core/objects/displist.h"
-
 struct VertexInfo
 {
     float pos[3];
@@ -34,12 +30,18 @@ protected:
     QOpenGLShader *m_VertexShader;
     QOpenGLShader *m_FragmentShader;
     QOpenGLShaderProgram *m_Program;
-    QOpenGLFunctions_3_2_Core *OpenGLCore = nullptr;
-
+    // MVP Location
+    GLint m_MLocationMat;
+    GLint m_VLocationMat;
+    GLint m_PLocationMat;
+    GLint m_PosVector;
+    GLint m_ColorVector;
+    // VBO
+    GLuint m_VBO;
+    // IBO
+    GLuint m_IBO;
     QMatrix4x4 mProjectionMatrix;
-
-    // context
-    subsurface::SContext *scontext;
+    QOpenGLFunctions_3_2_Core *OpenGLCore = nullptr;
 
     void initializeGL() Q_DECL_OVERRIDE;
     void resizeGL(int w, int h) Q_DECL_OVERRIDE;
