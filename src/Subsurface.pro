@@ -24,14 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-    core/scence/scence.cpp \
-    core/scence/primitives/box.cpp \
-    core/scence/shape.cpp \
-    core/scence/light.cpp \
-    core/scence/camera.cpp \
-    editor/widget/colorbox.cpp \
-    editor/widget/namecolorwidget.cpp \
+    main.cpp \
     editor/commandpanel.cpp \
     editor/createprimitivetab.cpp \
     editor/createtab.cpp \
@@ -39,32 +32,32 @@ SOURCES += \
     editor/mainwindow.cpp \
     editor/modifytab.cpp \
     editor/viewwidget.cpp \
+    editor/layout/flowlayout.cpp \
+    editor/widget/colorbox.cpp \
+    editor/widget/modifierstack.cpp \
+    editor/widget/namecolorwidget.cpp \
+    editor/widget/scombobox.cpp \
     editor/widget/spushbutton.cpp \
     editor/widget/stoolbarbutton.cpp \
-    editor/layout/flowlayout.cpp \
-    core/data/datablock.cpp \
-    editor/widget/scombobox.cpp \
-    editor/widget/modifierstack.cpp \
-    core/loader/readfile.cpp \
-    core/loader/filedata.cpp \
-    core/scontext.cpp \
     core/datacontext.cpp \
     core/editorcontext.cpp \
-    core/data/sobject.cpp \
-    core/scence/geometry.cpp
+    core/scontext.cpp \
+    core/data/datablock.cpp \
+    core/loader/filedata.cpp \
+    core/loader/readfile.cpp \
+    core/objects/aabbboundbox.cpp \
+    core/objects/boundbox.cpp \
+    core/objects/camera.cpp \
+    core/objects/geometry.cpp \
+    core/objects/light.cpp \
+    core/objects/plane.cpp \
+    core/objects/scence.cpp \
+    core/objects/shape.cpp \
+    core/objects/sobject.cpp \
+    core/objects/geometry/box.cpp
+
 
 HEADERS += \
-    core/scence/scence.h \
-    core/scence/primitives/box.h \
-    core/type.h \
-    core/scence/normal.h \
-    core/scence/point.h \
-    core/scence/vector.h \
-    core/scence/shape.h \
-    core/scence/light.h \
-    core/scence/camera.h \
-    editor/widget/colorbox.h \
-    editor/widget/namecolorwidget.h \
     editor/commandpanel.h \
     editor/createprimitivetab.h \
     editor/createtab.h \
@@ -72,31 +65,46 @@ HEADERS += \
     editor/mainwindow.h \
     editor/modifytab.h \
     editor/viewwidget.h \
+    editor/layout/flowlayout.h \
+    editor/widget/colorbox.h \
+    editor/widget/modifierstack.h \
+    editor/widget/namecolorwidget.h \
+    editor/widget/scombobox.h \
     editor/widget/spushbutton.h \
     editor/widget/stoolbarbutton.h \
-    editor/layout/flowlayout.h \
+    core/datacontext.h \
+    core/editorcontext.h \
+    core/scontext.h \
+    core/type.h \
     core/data/datablock.h \
-    core/data/serialization/serializable.h \
+    core/data/dimensions.h \
+    core/data/id.h \
     core/data/serialization/binarywriter.h \
-    editor/widget/scombobox.h \
-    editor/widget/modifierstack.h \
-    core/loader/readfile.h \
-    core/loader/filedata.h \
     core/data/serialization/FileInputStream.h \
     core/data/serialization/FileOutputStream.h \
     core/data/serialization/InputStream.h \
     core/data/serialization/OutputStream.h \
+    core/data/serialization/serializable.h \
     core/data/serialization/Stream.h \
     core/data/serialization/StreamBase.h \
-    core/util/Endian.h \
-    core/util/singleton.h \
-    core/scontext.h \
-    core/datacontext.h \
-    core/editorcontext.h \
-    core/data/id.h \
-    core/data/sobject.h \
-    core/data/dimensions.h \
-    core/scence/geometry.h
+    core/loader/filedata.h \
+    core/loader/readfile.h \
+    core/objects/aabbboundbox.h \
+    core/objects/boundbox.h \
+    core/objects/camera.h \
+    core/objects/geometry.h \
+    core/objects/light.h \
+    core/objects/normal.h \
+    core/objects/plane.h \
+    core/objects/point.h \
+    core/objects/scence.h \
+    core/objects/shape.h \
+    core/objects/sobject.h \
+    core/objects/vector.h \
+    core/objects/geometry/box.h \
+    core/util/endian.h \
+    core/util/singleton.h
+
 
 FORMS += \
     editor/mainwindow.ui

@@ -8,7 +8,7 @@ namespace subsurface
 {
     namespace scence
     {
-        class Box : public Primitive
+        class Box : public Geometry
         {
         public:
             Box();

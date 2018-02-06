@@ -2,19 +2,24 @@
 #define SCENCE_H
 
 #include <vector>
-#include "primitive.h"
+#include"sobject.h"
+#include "geometry.h"
+#include "vector.h"
+#include "point.h"
 
 namespace subsurface
 {
     namespace scence
     {
-        class Scence
+        class Scence : public data::SObject
         {
         public:
             Scence();
 
+        protected:
+
         private:
-            std::vector<Primitive> primitiveList;
+            std::vector<SObject> objectsList;
         };
     }
 

@@ -1,8 +1,7 @@
-#ifndef PRIMITIVE_H
-#define PRIMITIVE_H
+#ifndef GEOMETRY_H
+#define GEOMETRY_H
 
-#include "../data/sobject.h"
-#include "vector.h"
+#include "sobject.h"
 namespace subsurface
 {
     namespace scence
@@ -15,4 +14,4 @@ namespace subsurface
     }
 }
 
-#endif // PRIMITIVE_H
+#endif // GEOMETRY_H

@@ -3,9 +3,9 @@
 
 #include <list>
 
-#include"id.h"
-#include"serialization/serializable.h"
-#include"../scence/point.h"
+#include"../data/id.h"
+#include"../data/serialization/serializable.h"
+#include"point.h"
 
 namespace subsurface
 {
