@@ -2,7 +2,7 @@
 #define BOX_H
 
 #include <cstdint>
-#include "../primitive.h"
+#include "../geometry.h"
 
 namespace subsurface
 {

@@ -1,18 +1,16 @@
 #ifndef PRIMITIVE_H
 #define PRIMITIVE_H
 
+#include "../data/sobject.h"
 #include "vector.h"
 namespace subsurface
 {
     namespace scence
     {
-        class Primitive
+        class Geometry : public data::SObject
         {
         public:
-            Primitive();
-
-        protected:
-            Vector3f position;
+            Geometry();
         };
     }
 }

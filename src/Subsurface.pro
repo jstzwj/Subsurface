@@ -26,7 +26,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     core/scence/scence.cpp \
-    core/scence/primitive.cpp \
     core/scence/primitives/box.cpp \
     core/scence/shape.cpp \
     core/scence/light.cpp \
@@ -50,11 +49,12 @@ SOURCES += \
     core/loader/filedata.cpp \
     core/scontext.cpp \
     core/datacontext.cpp \
-    core/editorcontext.cpp
+    core/editorcontext.cpp \
+    core/data/sobject.cpp \
+    core/scence/geometry.cpp
 
 HEADERS += \
     core/scence/scence.h \
-    core/scence/primitive.h \
     core/scence/primitives/box.h \
     core/type.h \
     core/scence/normal.h \
@@ -92,7 +92,11 @@ HEADERS += \
     core/util/singleton.h \
     core/scontext.h \
     core/datacontext.h \
-    core/editorcontext.h
+    core/editorcontext.h \
+    core/data/id.h \
+    core/data/sobject.h \
+    core/data/dimensions.h \
+    core/scence/geometry.h
 
 FORMS += \
     editor/mainwindow.ui

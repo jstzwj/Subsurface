@@ -1,5 +1,4 @@
 #include "viewwidget.h"
-#include<QThread>
 
 ViewWidget::ViewWidget(QWidget * parent)
     :QOpenGLWidget(parent)
@@ -86,7 +85,6 @@ void ViewWidget::initializeGL()
 
 void ViewWidget::paintGL()
 {
-    qDebug()<<"paint:"<<QThread::currentThread();
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
 
